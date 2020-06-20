@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+html {
+    background-color: #FDFDFE; 
+}
+#portfolio-container {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-content: center;
+}
+.header-block {
+    font-family: 'Reenie Beanie', sans-serif;
+    padding: 3px;
+    color: #3D3C3C;
+    font-size:80px;
+    text-align:center;
+}
+#main-logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.nav-item img {
+    height:30px;
+    margin: 10px;
+    object-fit:cover;
+}
+#nav-container {
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:10px;
+}
+p.c1 {
+    text-align: center;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:14px;
+    margin-top:25px;
+}
+#form-container {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-content: center;
+}
+.form-item-name, .form-item-email, .form-item-message, .form-item-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.form-item-name {
+    float: left;
+    margin-right: 5px;
+}
+::placeholder {
+    color:#3D3C3C;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:12px;
+}
+textarea {
+    display: flex;
+    width:291px;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:12px;
+}
+input {
+    display: flex;
+    max-width: 140px;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:12px;
+}
+#send-button {
+    background-color: #ebebeb;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:12px;
+}
+#bio-container {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-content: center;
+}
+.bio-photo {
+    display:flex;
+    align-content: center;
+    flex-shrink: 1;
+}
+.bio-photo img {
+    display: flex;
+    object-fit:cover;
+    max-width:250px;
+}
+.bio-text {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:14px;
+    flex-basis:500px;
+    margin-left: 20px;
+}
+@media (min-width:600px) {
+    #portfolio-container{
+        margin-left:50px;
+        margin-right:50px;
+    }
+}
+@media (max-width:765px) {
+    .bio-text {
+        text-align: center;
+        margin-left: 0;
+    }
+}
