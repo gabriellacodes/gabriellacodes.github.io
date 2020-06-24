@@ -11,21 +11,11 @@ html {
     align-content: center;
 }
 .header-block {
-    font-family: 'Reenie Beanie', sans-serif;
-    padding: 3px;
-    color: #3D3C3C;
-    font-size:160px;
+    margin-top:150px;
+    margin-bottom: 50px;
     text-align:center;
 }
-#main-logo {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.nav-item img {
-    height: 50px;
-    margin: 10px;
-    object-fit:cover;
-}
+
 #nav-container {
     display:flex;
     justify-content: center;
@@ -97,7 +87,7 @@ input {
 .bio-photo img {
     display: flex;
     object-fit:cover;
-    max-width:600px;
+    max-width:500px;
 }
 .bio-text {
     font-family: 'Noto Sans HK', sans-serif;

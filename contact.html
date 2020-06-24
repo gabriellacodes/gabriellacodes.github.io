@@ -7,28 +7,23 @@
         <meta name="description" content="Gabriella.Codes">
         <meta name="author" content="this guy">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="button-styles.css">
     </head>
     <body>
     <header>
         <div class="header-block">
-            <h1 id="main-logo">gc</h1>
+            <img src="Images/main-logo.fw.png" alt="gabriella codes logo">
         </div>
     </header>
         <div id="nav-container">
             <div class="nav-item">
-                <a href="index.html">
-                <img id="nav-item-home" src="Images/button-portfolio.png" alt="portfolio">
-                </a>
+                <a href="index.html" class="nav-button">portfolio</a>
             </div>
             <div class="nav-item">
-                <a href="bio.html">
-                <img id="nav-item-bio" src="Images/button-bio.png" alt="bio">
-                </a>
+                <a href="bio.html" class="nav-button">bio</a>
             </div>
             <div class="nav-item">
-                <a href="contact.html">
-                <img id="nav-item-contact" src="Images/button-contact.png" alt="contact">
-                </a>
+                <a href="contact.html" class="nav-button">contact</a>
             </div>
         </div>
         <p class="c1">Keen to connect?</p>
@@ -47,9 +42,13 @@
                     <textarea id="message" name="message" placeholder="how can I help you?"></textarea>
                 </div>
                 <div class="form-item-button">
-                    <button id="send-button" type="submit">Send</button>
+                    <div class="left-frills frills"></div>
+                    <button class="send-button" type="submit">Send</button>
+                    <div class="right-frills frills"></div>
                 </div>
             </form>
         </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
