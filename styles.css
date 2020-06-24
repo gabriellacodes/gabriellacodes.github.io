@@ -14,7 +14,7 @@ html {
     font-family: 'Reenie Beanie', sans-serif;
     padding: 3px;
     color: #3D3C3C;
-    font-size:80px;
+    font-size:160px;
     text-align:center;
 }
 #main-logo {
@@ -22,7 +22,7 @@ html {
     margin-bottom: 40px;
 }
 .nav-item img {
-    height:30px;
+    height: 50px;
     margin: 10px;
     object-fit:cover;
 }
@@ -30,7 +30,7 @@ html {
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 .portfolio-item {
     display: flex;
@@ -41,7 +41,7 @@ html {
 p.c1 {
     text-align: center;
     font-family: 'Noto Sans HK', sans-serif;
-    font-size:14px;
+    font-size:24px;
     margin-top:25px;
 }
 #form-container {
@@ -63,24 +63,24 @@ p.c1 {
 ::placeholder {
     color:#3D3C3C;
     font-family: 'Noto Sans HK', sans-serif;
-    font-size:12px;
+    font-size:14px;
 }
 textarea {
     display: flex;
     width:291px;
     font-family: 'Noto Sans HK', sans-serif;
-    font-size:12px;
+    font-size:18px;
 }
 input {
     display: flex;
     max-width: 140px;
     font-family: 'Noto Sans HK', sans-serif;
-    font-size:12px;
+    font-size:14px;
 }
 #send-button {
     background-color: #ebebeb;
     font-family: 'Noto Sans HK', sans-serif;
-    font-size:12px;
+    font-size:14px;
 }
 #bio-container {
     display:flex;
@@ -97,11 +97,11 @@ input {
 .bio-photo img {
     display: flex;
     object-fit:cover;
-    max-width:250px;
+    max-width:600px;
 }
 .bio-text {
     font-family: 'Noto Sans HK', sans-serif;
-    font-size:14px;
+    font-size:18px;
     flex-basis:500px;
     margin-left: 20px;
 }
