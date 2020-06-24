@@ -68,7 +68,7 @@
     text-decoration: underline;
   }
 
-  /* Send Button Code */
+  /* Send Button Code, https://codepen.io/alexzaworski/pen/bNqoRW */
 
   .send-button {
     background: #BDF6FE;
@@ -94,9 +94,11 @@
   }
   .send-button:hover {
     background: #BDF6FE;
+    background-color: #6feeff;
+    transition: all .3s;
   }
   .send-button:active {
-    box-shadow: inset 0px 2px 8px -1px #bdf6fe;
+    box-shadow: inset 0px 2px 8px -1px #6feeff;
   }
   
   .form-item-button {
@@ -106,7 +108,7 @@
   
   .frills, .frills:after, .frills:before {
     position: absolute;
-    background: #bdf6fe;
+    background: #6feeff;
     border-radius: 4px;
     height: 8px;
   }

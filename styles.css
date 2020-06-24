@@ -72,7 +72,7 @@ input {
     font-family: 'Noto Sans HK', sans-serif;
     font-size:14px;
 }
-#bio-container {
+#bio-container, #social-container {
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
@@ -89,11 +89,18 @@ input {
     object-fit:cover;
     max-width:500px;
 }
-.bio-text {
+.bio-text, .social-links {
     font-family: 'Noto Sans HK', sans-serif;
     font-size:18px;
     flex-basis:500px;
     margin-left: 20px;
+}
+.social-links {
+    margin-top:30px;
+    text-align: center;
+}
+.social-links img {
+    width:40px;
 }
 @media (min-width:600px) {
     #portfolio-container{
@@ -101,7 +108,7 @@ input {
         margin-right:50px;
     }
 }
-@media (max-width:765px) {
+@media (max-width:1034px) {
     .bio-text {
         text-align: center;
         margin-left: 0;
