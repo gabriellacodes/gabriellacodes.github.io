@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Navigation Button Style */
+.nav-button {
+    display: inline-block;
+    padding: .5rem 1.25rem;
+    border-radius: 10rem;
+    color: #FDFDFE;
+    text-transform: lowercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .nav-button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FDDC5C;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .nav-button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #e0b400;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .nav-button:hover {
+    color: #FDFDFE;
+  }
+  .nav-button:hover:before {
+    width: 100%;
+  }
+
+  .nav-button {
+    font-family: 'Noto Sans HK', sans-serif;;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav-item {
+    margin: 25px;
+  }
+  
+  span {
+    display: block;
+    margin-top: 2rem;
+    font-size: .7rem;
+    color: #777;
+  }
+  span a {
+    font-size: .7rem;
+    color: #999;
+    text-decoration: underline;
+  }
+
+  /* Send Button Code */
+
+  .send-button {
+    background: #BDF6FE;
+    border-radius: 5px;
+    color: #FDFDFE;
+    cursor: pointer;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    letter-spacing: .2px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 100px;
+    margin-top: 40px;
+    text-transform: lowercase;
+    border-radius: 10rem;
+    border: none;
+  }
+  .send-button:hover {
+    background: #BDF6FE;
+  }
+  .send-button:active {
+    box-shadow: inset 0px 2px 8px -1px #bdf6fe;
+  }
+  
+  .form-item-button {
+    margin: auto;
+    position: relative;
+  }
+  
+  .frills, .frills:after, .frills:before {
+    position: absolute;
+    background: #bdf6fe;
+    border-radius: 4px;
+    height: 8px;
+  }
+  
+  .frills:after, .frills:before {
+    content: "";
+    display: block;
+  }
+  
+  .frills:before {
+    bottom: 20px;
+  }
+  
+  .frills:after {
+    top: 20px;
+  }
+  
+  .left-frills {
+    right: 164px;
+    top: 58px;
+  }
+  .active .left-frills {
+    -webkit-animation: move-left 0.7s ease-out, width-to-zero 0.7s ease-out;
+            animation: move-left 0.7s ease-out, width-to-zero 0.7s ease-out;
+  }
+  .left-frills:before, .left-frills:after {
+    left: 15px;
+  }
+  .active .left-frills:before {
+    -webkit-animation: width-to-zero 0.7s ease-out, move-up 0.7s ease-out;
+            animation: width-to-zero 0.7s ease-out, move-up 0.7s ease-out;
+  }
+  .active .left-frills:after {
+    -webkit-animation: width-to-zero 0.7s ease-out, move-down 0.7s ease-out;
+            animation: width-to-zero 0.7s ease-out, move-down 0.7s ease-out;
+  }
+  
+  .right-frills {
+    left: 164px;
+    top: 58px;
+  }
+  .active .right-frills {
+    -webkit-animation: move-right 0.7s ease-out, width-to-zero 0.7s ease-out;
+            animation: move-right 0.7s ease-out, width-to-zero 0.7s ease-out;
+  }
+  .right-frills:before, .right-frills:after {
+    right: 15px;
+  }
+  .active .right-frills:before {
+    -webkit-animation: width-to-zero 0.7s ease-out, move-up 0.7s ease-out;
+            animation: width-to-zero 0.7s ease-out, move-up 0.7s ease-out;
+  }
+  .active .right-frills:after {
+    -webkit-animation: width-to-zero 0.7s ease-out, move-down 0.7s ease-out;
+            animation: width-to-zero 0.7s ease-out, move-down 0.7s ease-out;
+  }
+  
+  .left-frills:before, .right-frills:after {
+    -webkit-transform: rotate(34deg);
+            transform: rotate(34deg);
+  }
+  
+  .left-frills:after, .right-frills:before {
+    -webkit-transform: rotate(-34deg);
+            transform: rotate(-34deg);
+  }
+  
+  @-webkit-keyframes move-left {
+    0% {
+      -webkit-transform: none;
+              transform: none;
+    }
+    65% {
+      -webkit-transform: translateX(-80px);
+              transform: translateX(-80px);
+    }
+    100% {
+      -webkit-transform: translateX(-80px);
+              transform: translateX(-80px);
+    }
+  }
+  
+  @keyframes move-left {
+    0% {
+      -webkit-transform: none;
+              transform: none;
+    }
+    65% {
+      -webkit-transform: translateX(-80px);
+              transform: translateX(-80px);
+    }
+    100% {
+      -webkit-transform: translateX(-80px);
+              transform: translateX(-80px);
+    }
+  }
+  @-webkit-keyframes move-right {
+    0% {
+      -webkit-transform: none;
+              transform: none;
+    }
+    65% {
+      -webkit-transform: translateX(80px);
+              transform: translateX(80px);
+    }
+    100% {
+      -webkit-transform: translateX(80px);
+              transform: translateX(80px);
+    }
+  }
+  @keyframes move-right {
+    0% {
+      -webkit-transform: none;
+              transform: none;
+    }
+    65% {
+      -webkit-transform: translateX(80px);
+              transform: translateX(80px);
+    }
+    100% {
+      -webkit-transform: translateX(80px);
+              transform: translateX(80px);
+    }
+  }
+  @-webkit-keyframes width-to-zero {
+    0% {
+      width: 38px;
+    }
+    100% {
+      width: 8px;
+    }
+  }
+  @keyframes width-to-zero {
+    0% {
+      width: 38px;
+    }
+    100% {
+      width: 8px;
+    }
+  }
+  @-webkit-keyframes move-up {
+    100% {
+      bottom: 69.75px;
+    }
+  }
+  @keyframes move-up {
+    100% {
+      bottom: 69.75px;
+    }
+  }
+  @-webkit-keyframes move-down {
+    100% {
+      top: 69.75px;
+    }
+  }
+  @keyframes move-down {
+    100% {
+      top: 69.75px;
+    }
+  }
